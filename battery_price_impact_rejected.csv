@@ -1,0 +1,98 @@
+market,year,outcome,gate_failed,value,detail
+CAISO,2021,daily_spread,physical,1.0955,gross ratio 1.0955 below the 1.15-1.45 band by 0.0545
+CAISO,2021,mean,physical,1.0955,gross ratio 1.0955 below the 1.15-1.45 band by 0.0545
+CAISO,2021,peak_shaving,physical,1.0955,gross ratio 1.0955 below the 1.15-1.45 band by 0.0545
+CAISO,2021,valley_filling,physical,1.0955,gross ratio 1.0955 below the 1.15-1.45 band by 0.0545
+CAISO,2021,volatility,physical,1.0955,gross ratio 1.0955 below the 1.15-1.45 band by 0.0545
+CAISO,2022,daily_spread,physical,0.6348,gross ratio 0.6348 below the 1.15-1.45 band by 0.5152
+CAISO,2022,mean,physical,0.6348,gross ratio 0.6348 below the 1.15-1.45 band by 0.5152
+CAISO,2022,peak_shaving,physical,0.6348,gross ratio 0.6348 below the 1.15-1.45 band by 0.5152
+CAISO,2022,valley_filling,physical,0.6348,gross ratio 0.6348 below the 1.15-1.45 band by 0.5152
+CAISO,2022,volatility,physical,0.6348,gross ratio 0.6348 below the 1.15-1.45 band by 0.5152
+CAISO,2023,daily_spread,physical,1.0243,gross ratio 1.0243 below the 1.15-1.45 band by 0.1257
+CAISO,2023,mean,physical,1.0243,gross ratio 1.0243 below the 1.15-1.45 band by 0.1257
+CAISO,2023,peak_shaving,physical,1.0243,gross ratio 1.0243 below the 1.15-1.45 band by 0.1257
+CAISO,2023,valley_filling,physical,1.0243,gross ratio 1.0243 below the 1.15-1.45 band by 0.1257
+CAISO,2023,volatility,physical,1.0243,gross ratio 1.0243 below the 1.15-1.45 band by 0.1257
+CAISO,2025,daily_spread,identification,0.0667,daily spread needs the top quartile: rho_top_q 0.0667 below 0.6
+CAISO,2025,peak_shaving,identification,0.0667,"rho_top_q 0.0667 below 0.6, the region peak shaving reads"
+ERCOT,2020,daily_spread,physical,1.0491,gross ratio 1.0491 below the 1.15-1.45 band by 0.1009
+ERCOT,2020,mean,physical,1.0491,gross ratio 1.0491 below the 1.15-1.45 band by 0.1009
+ERCOT,2020,peak_shaving,physical,1.0491,gross ratio 1.0491 below the 1.15-1.45 band by 0.1009
+ERCOT,2020,valley_filling,physical,1.0491,gross ratio 1.0491 below the 1.15-1.45 band by 0.1009
+ERCOT,2020,volatility,physical,1.0491,gross ratio 1.0491 below the 1.15-1.45 band by 0.1009
+ERCOT,2021,daily_spread,excluded,,"Winter Storm Uri: February carries 78.1% of the year's price mass at a monthly mean of 1,483 USD/MWh against 20 to 51 in every other month; administrative scarcity pricing, not a merit order"
+ERCOT,2021,mean,excluded,,"Winter Storm Uri: February carries 78.1% of the year's price mass at a monthly mean of 1,483 USD/MWh against 20 to 51 in every other month; administrative scarcity pricing, not a merit order"
+ERCOT,2021,peak_shaving,excluded,,"Winter Storm Uri: February carries 78.1% of the year's price mass at a monthly mean of 1,483 USD/MWh against 20 to 51 in every other month; administrative scarcity pricing, not a merit order"
+ERCOT,2021,valley_filling,excluded,,"Winter Storm Uri: February carries 78.1% of the year's price mass at a monthly mean of 1,483 USD/MWh against 20 to 51 in every other month; administrative scarcity pricing, not a merit order"
+ERCOT,2021,volatility,excluded,,"Winter Storm Uri: February carries 78.1% of the year's price mass at a monthly mean of 1,483 USD/MWh against 20 to 51 in every other month; administrative scarcity pricing, not a merit order"
+ERCOT,2022,valley_filling,identification,0.0182,"rho_bottom_q 0.0182 below 0.6, the region valley filling reads"
+ERCOT,2023,daily_spread,identification,0.5152,daily spread needs the top quartile: rho_top_q 0.5152 below 0.6
+ERCOT,2023,mean,identification,-0.6538,"rho_whole -0.6538 below 0.6, the region mean reads"
+ERCOT,2023,peak_shaving,identification,0.5152,"rho_top_q 0.5152 below 0.6, the region peak shaving reads"
+ERCOT,2023,valley_filling,identification,-0.8061,"rho_bottom_q -0.8061 below 0.6, the region valley filling reads"
+ERCOT,2023,volatility,identification,-0.6538,"rho_whole -0.6538 below 0.6, the region volatility reads"
+ERCOT,2024,valley_filling,identification,-0.3212,"rho_bottom_q -0.3212 below 0.6, the region valley filling reads"
+Great Britain,2021,daily_spread,identification,0.4182,daily spread needs the top quartile: rho_top_q 0.4182 below 0.6
+Great Britain,2021,mean,identification,0.5026,"rho_whole 0.5026 below 0.6, the region mean reads"
+Great Britain,2021,peak_shaving,identification,0.4182,"rho_top_q 0.4182 below 0.6, the region peak shaving reads"
+Great Britain,2021,volatility,identification,0.5026,"rho_whole 0.5026 below 0.6, the region volatility reads"
+Great Britain,2022,daily_spread,identification,0.5273,daily spread needs the top quartile: rho_top_q 0.5273 below 0.6
+Great Britain,2022,peak_shaving,identification,0.5273,"rho_top_q 0.5273 below 0.6, the region peak shaving reads"
+NSW1,2020,daily_spread,physical,,no discharge recorded
+NSW1,2020,mean,physical,,no discharge recorded
+NSW1,2020,peak_shaving,physical,,no discharge recorded
+NSW1,2020,valley_filling,physical,,no discharge recorded
+NSW1,2020,volatility,physical,,no discharge recorded
+NSW1,2021,daily_spread,physical,1.1833,throughput 0.8 GWh below the 10 GWh floor
+NSW1,2021,mean,physical,1.1833,throughput 0.8 GWh below the 10 GWh floor
+NSW1,2021,peak_shaving,physical,1.1833,throughput 0.8 GWh below the 10 GWh floor
+NSW1,2021,valley_filling,physical,1.1833,throughput 0.8 GWh below the 10 GWh floor
+NSW1,2021,volatility,physical,1.1833,throughput 0.8 GWh below the 10 GWh floor
+NSW1,2024,daily_spread,identification,0.6,daily spread has rho_top_q 0.6000 but neither rho_bottom_q 0.1879 >= 0.6 nor bottom share 0.1763 < 0.1
+NSW1,2024,valley_filling,identification,0.1879,"rho_bottom_q 0.1879 below 0.6, the region valley filling reads"
+NSW1,2025,daily_spread,identification,0.4545,daily spread needs the top quartile: rho_top_q 0.4545 below 0.6
+NSW1,2025,mean,identification,0.394,"rho_whole 0.3940 below 0.6, the region mean reads"
+NSW1,2025,peak_shaving,identification,0.4545,"rho_top_q 0.4545 below 0.6, the region peak shaving reads"
+NSW1,2025,valley_filling,identification,0.1152,"rho_bottom_q 0.1152 below 0.6, the region valley filling reads"
+NSW1,2025,volatility,identification,0.394,"rho_whole 0.3940 below 0.6, the region volatility reads"
+QLD1,2020,daily_spread,physical,,no discharge recorded
+QLD1,2020,mean,physical,,no discharge recorded
+QLD1,2020,peak_shaving,physical,,no discharge recorded
+QLD1,2020,valley_filling,physical,,no discharge recorded
+QLD1,2020,volatility,physical,,no discharge recorded
+QLD1,2021,daily_spread,physical,2.3615,throughput 0.2 GWh below the 10 GWh floor
+QLD1,2021,mean,physical,2.3615,throughput 0.2 GWh below the 10 GWh floor
+QLD1,2021,peak_shaving,physical,2.3615,throughput 0.2 GWh below the 10 GWh floor
+QLD1,2021,valley_filling,physical,2.3615,throughput 0.2 GWh below the 10 GWh floor
+QLD1,2021,volatility,physical,2.3615,throughput 0.2 GWh below the 10 GWh floor
+QLD1,2022,daily_spread,identification,0.5879,daily spread needs the top quartile: rho_top_q 0.5879 below 0.6
+QLD1,2022,mean,identification,0.3043,"rho_whole 0.3043 below 0.6, the region mean reads"
+QLD1,2022,peak_shaving,identification,0.5879,"rho_top_q 0.5879 below 0.6, the region peak shaving reads"
+QLD1,2022,volatility,identification,0.3043,"rho_whole 0.3043 below 0.6, the region volatility reads"
+QLD1,2023,daily_spread,identification,0.3697,daily spread needs the top quartile: rho_top_q 0.3697 below 0.6
+QLD1,2023,mean,identification,0.348,"rho_whole 0.3480 below 0.6, the region mean reads"
+QLD1,2023,peak_shaving,identification,0.3697,"rho_top_q 0.3697 below 0.6, the region peak shaving reads"
+QLD1,2023,volatility,identification,0.348,"rho_whole 0.3480 below 0.6, the region volatility reads"
+QLD1,2024,daily_spread,identification,-0.0061,daily spread needs the top quartile: rho_top_q -0.0061 below 0.6
+QLD1,2024,mean,identification,0.0606,"rho_whole 0.0606 below 0.6, the region mean reads"
+QLD1,2024,peak_shaving,identification,-0.0061,"rho_top_q -0.0061 below 0.6, the region peak shaving reads"
+QLD1,2024,volatility,identification,0.0606,"rho_whole 0.0606 below 0.6, the region volatility reads"
+QLD1,2025,daily_spread,identification,-0.0424,daily spread needs the top quartile: rho_top_q -0.0424 below 0.6
+QLD1,2025,mean,identification,0.3193,"rho_whole 0.3193 below 0.6, the region mean reads"
+QLD1,2025,peak_shaving,identification,-0.0424,"rho_top_q -0.0424 below 0.6, the region peak shaving reads"
+QLD1,2025,valley_filling,identification,0.3697,"rho_bottom_q 0.3697 below 0.6, the region valley filling reads"
+QLD1,2025,volatility,identification,0.3193,"rho_whole 0.3193 below 0.6, the region volatility reads"
+SA1,2020,daily_spread,identification,0.4424,daily spread needs the top quartile: rho_top_q 0.4424 below 0.6
+SA1,2020,peak_shaving,identification,0.4424,"rho_top_q 0.4424 below 0.6, the region peak shaving reads"
+SA1,2023,valley_filling,identification,-0.4909,"rho_bottom_q -0.4909 below 0.6, the region valley filling reads"
+SA1,2024,daily_spread,identification,0.8303,daily spread has rho_top_q 0.8303 but neither rho_bottom_q 0.1273 >= 0.6 nor bottom share 0.1145 < 0.1
+SA1,2024,valley_filling,identification,0.1273,"rho_bottom_q 0.1273 below 0.6, the region valley filling reads"
+SA1,2025,valley_filling,identification,-0.9273,"rho_bottom_q -0.9273 below 0.6, the region valley filling reads"
+VIC1,2020,daily_spread,identification,0.4182,daily spread needs the top quartile: rho_top_q 0.4182 below 0.6
+VIC1,2020,peak_shaving,identification,0.4182,"rho_top_q 0.4182 below 0.6, the region peak shaving reads"
+VIC1,2024,daily_spread,identification,0.9515,daily spread has rho_top_q 0.9515 but neither rho_bottom_q 0.2121 >= 0.6 nor bottom share 0.1465 < 0.1
+VIC1,2024,valley_filling,identification,0.2121,"rho_bottom_q 0.2121 below 0.6, the region valley filling reads"
+VIC1,2025,daily_spread,identification,-0.1879,daily spread needs the top quartile: rho_top_q -0.1879 below 0.6
+VIC1,2025,peak_shaving,identification,-0.1879,"rho_top_q -0.1879 below 0.6, the region peak shaving reads"
+VIC1,2025,valley_filling,identification,0.1394,"rho_bottom_q 0.1394 below 0.6, the region valley filling reads"

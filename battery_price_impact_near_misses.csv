@@ -1,0 +1,6 @@
+market,year,gross_ratio,distance_from_band,times_further_than_CAISO_2024,admitted
+CAISO,2021,1.0955,0.0545,24.8,False
+CAISO,2022,0.6348,0.5152,234.2,False
+CAISO,2023,1.0243,0.1257,57.1,False
+ERCOT,2020,1.0491,0.1009,45.9,False
+QLD1,2021,2.3615,0.9115,414.3,False

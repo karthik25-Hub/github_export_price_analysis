@@ -1,0 +1,4 @@
+market,year,outcome,effect,lo95,hi95,pct_of_mean_price,per_GW_fleet,currency,fleet_MW,mean_price,gross_ratio,rho_governing,placebo_p,placebo_p_adjusted,n_draws,exception
+QLD1,2022,valley_filling,0.0309,0.0015,0.2668,0.015,0.2436,AUD,127.0,205.14,1.2711,0.8061,0.001,0.033,999,
+QLD1,2023,valley_filling,0.1155,0.0179,0.463,0.127,0.3523,AUD,328.0,90.67,1.1934,0.8788,0.001,0.001,999,
+QLD1,2024,valley_filling,1.2932,0.4781,2.4374,1.16,1.1449,AUD,1129.5,111.48,1.227,0.9879,0.001,0.001,999,

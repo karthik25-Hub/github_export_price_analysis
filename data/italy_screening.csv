@@ -1,0 +1,14 @@
+month,hours_in_month,hours_covered,coverage_pct,discharge_GWh,charge_GWh,gross_ratio,net_ratio,inside_band_gross,inside_band_net,above_floor_1p00,raw_discharge_leg_reported_pct,raw_charge_leg_reported_pct
+Jan,744,744,100.0,37.0,42.7,1.1547,1.1656,True,True,True,99.6,63.5
+Feb,672,672,100.0,50.3,56.7,1.1275,1.1326,False,False,True,99.2,61.6
+Mar,744,744,100.0,87.9,88.6,1.0082,1.0086,False,False,True,98.2,64.8
+Apr,720,720,100.0,101.6,114.0,1.1222,1.1309,False,False,True,96.9,69.6
+May,744,744,100.0,111.9,126.0,1.1265,1.1358,False,False,True,97.4,65.8
+Jun,720,670,93.1,90.5,103.8,1.1468,1.1595,False,True,True,91.4,62.4
+Jul,744,722,97.0,98.6,113.7,1.1531,1.1723,True,True,True,93.6,70.0
+Aug,744,744,100.0,111.2,131.0,1.1785,1.1926,True,True,True,91.7,68.8
+Sep,720,558,77.5,157.7,122.6,0.777,0.772,False,False,False,53.8,35.3
+Oct,744,481,64.7,161.1,73.8,0.4578,0.4577,False,False,False,32.0,10.9
+Nov,720,504,70.0,144.1,100.5,0.6972,0.6968,False,False,False,31.2,15.7
+Dec,744,522,70.2,142.4,103.1,0.7246,0.7241,False,False,False,32.5,13.7
+Year,8760,7825,89.3,1294.1,1176.3,0.909,0.9051,False,False,False,76.4,50.1

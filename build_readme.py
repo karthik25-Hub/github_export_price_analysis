@@ -14,6 +14,30 @@ from pathlib import Path
 
 import pandas as pd
 
+import sys
+
+# ---------------------------------------------------------------------------
+# ONE-SHOT SCRIPT. DO NOT RE-RUN.  Disabled 2026-08-18.
+#
+# SRC is README.md and the output is written back to README.md, so this script
+# consumes its own output. The first run stripped the sentences it replaces;
+# every later run cannot find them and raises AttributeError at line ~185.
+#
+# Guarding those regexes does NOT fix it. Tested: with the searches guarded the
+# script runs but appends 28 lines / 1,836 bytes on every run, silently growing
+# the README. That is worse than the crash.
+#
+# The real fix needs the pre-run source document, which was never committed
+# (git log shows one commit, already carrying the 525-line output). To restore
+# re-runnability: strip the generated tables out of the current README by hand,
+# save that as README_source.md, point SRC at it, and keep the output separate.
+#
+# Until then README.md is maintained by hand. Numbers in it must be checked
+# against battery_price_impact_master.csv, not assumed.
+# ---------------------------------------------------------------------------
+sys.exit("build_readme.py is one-shot and disabled; see the note at the top of this file.")
+
+
 HERE = Path(__file__).resolve().parent
 M = pd.read_csv(HERE / "battery_price_impact_master.csv")
 J = pd.read_csv(HERE / "battery_price_impact_rejected.csv")

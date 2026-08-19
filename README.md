@@ -144,7 +144,7 @@ and the rows are kept rather than dropped so the screening remains visible.
 | 2022 | 223 | 155.89 | 1.2699 | pass | 5 of 5 | — |
 | 2023 | 523 | 80.07 | 1.3404 | pass | 4 of 5 | Valley |
 | 2024 | 804 | 100.11 | 1.3413 | pass | 3 of 5 | Spread, Valley |
-| 2025 | 1,301 | 86.73 | 1.2474 | pass | 4 of 5 | Valley |
+| 2025 | 1,392 | 86.73 | 1.2474 | pass | 4 of 5 | Valley |
 
 **Effects, per cent of mean price**
 
@@ -179,7 +179,7 @@ and the rows are kept rather than dropped so the screening remains visible.
 | 2022 | 444 | 134.06 | 1.2096 | pass | 5 of 5 | — |
 | 2023 | 651 | 54.78 | 1.2208 | pass | 5 of 5 | — |
 | 2024 | 911 | 82.13 | 1.2472 | pass | 3 of 5 | Spread, Valley |
-| 2025 | 1,883 | 77.89 | 1.2108 | pass | 2 of 5 | Spread, Peak, Valley |
+| 2025 | 1,885 | 77.89 | 1.2108 | pass | 2 of 5 | Spread, Peak, Valley |
 
 **Effects, per cent of mean price**
 

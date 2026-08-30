@@ -17,17 +17,30 @@ anything: it reports what the CSVs contain.
 """
 from __future__ import annotations
 
+import sys
 import textwrap
 from pathlib import Path
 
 import pandas as pd
 
-HERE = Path(__file__).resolve().parent
+# Defaults describe this repository. The thesis keeps the same export under
+# ANALYSIS DATA/price, with the market slices in by_market/ rather than data/ and the
+# README under a different name, so all three are overridable:
+#     python build_readme.py SRC_DIR BY_MARKET_SUBDIR OUT_FILENAME
+HERE = Path(sys.argv[1]).resolve() if len(sys.argv) > 1 else Path(__file__).resolve().parent
+DATA = sys.argv[2] if len(sys.argv) > 2 else "data"
+OUTNAME = sys.argv[3] if len(sys.argv) > 3 else "README.md"
+VENUE = "repository" if OUTNAME == "README.md" else "folder"
+# The script is published alongside the CSVs in the repository; the thesis copy of this
+# export does not carry it, so name where it lives instead.
+SCRIPT_ROW = ("`build_readme.py`" if OUTNAME == "README.md"
+              else "`RESULTS/github_export_price/build_readme.py`")
+
 M = pd.read_csv(HERE / "battery_price_impact_master.csv")
 J = pd.read_csv(HERE / "battery_price_impact_rejected.csv")
 N = pd.read_csv(HERE / "battery_price_impact_near_misses.csv")
-IT = pd.read_csv(HERE / "data" / "italy_screening.csv")
-DE = pd.read_csv(HERE / "data" / "germany_screening.csv")
+IT = pd.read_csv(HERE / DATA / "italy_screening.csv")
+DE = pd.read_csv(HERE / DATA / "germany_screening.csv")
 
 ORDER = ["SA1", "VIC1", "NSW1", "QLD1", "Great Britain", "CAISO", "ERCOT"]
 OUTC = ["mean", "daily_spread", "peak_shaving", "valley_filling", "volatility"]
@@ -192,7 +205,7 @@ Britain, CAISO, ERCOT, Germany and Italy. Seven produce price estimates. Germany
 Italy do not, for reasons given below, and carry their screening evidence instead.
 
 **These figures correspond to the submitted version of the thesis.** They supersede
-everything published in this repository before 30 August 2026. Two specification changes
+everything published in this {VENUE} before 30 August 2026. Two specification changes
 sit between the two, and both are set out below: the composition adjustment was removed,
 and CAISO's price basis was corrected from real-time to day-ahead.
 
@@ -284,9 +297,7 @@ demand, which is why the ordering is weak, and the year is retained with the sho
 recorded rather than dropped.
 
 Both are recorded in the `exception` column of all five affected rows rather than folded
-silently into the retained set. The exception text stored in the frozen master describes
-the 0.60 screen using the older wording; the screen is the price-ordering screen
-described above.
+silently into the retained set.
 
 `battery_price_impact_near_misses.csv` is the justification for admitting the physical
 exception and no others. It gives every rejected year's distance from the band:
@@ -382,7 +393,7 @@ residual demand.
 **CAISO figures are the day-ahead SP15 locational marginal price, node
 `TH_SP15_GEN-APND`, covering 2024 and 2025.**
 
-**An earlier version of this repository carried CAISO real-time prices, and those
+**An earlier version of this {VENUE} carried CAISO real-time prices, and those
 figures are superseded.** The loader had always taken the 5-minute SP15 real-time LMP
 averaged to the hour, while every other market in the study loads day-ahead. The choice
 was never deliberate: it followed from which CAISO files happened to be present, and it
@@ -438,7 +449,7 @@ Every ERCOT figure in this export is computed on the corrected panel.
 ## Germany and Italy produce no estimate
 
 **Germany: no battery dispatch series exists.** Four sources were checked and are
-recorded in `data/germany_screening.csv`. SMARD publishes no battery category at all,
+recorded in `{DATA}/germany_screening.csv`. SMARD publishes no battery category at all,
 only Pumpspeicher, pumped hydro, which is a different technology. ENTSO-E production
 type B25 is absent for the DE-LU bidding zone at ten dates sampled across the period,
 while the identical query against the Italian bidding zone returns B25, which
@@ -455,7 +466,7 @@ market has everything except the one series the method requires.
 January 2025; every month of 2024 was queried and returned nothing. The 2025 series
 covers {IT_YEAR.hours_covered:,} of 8,760 hours and returns an annual gross
 charge-to-discharge ratio of **{IT_YEAR.gross_ratio:.4f}**, below the physical floor of
-1.00 and therefore impossible. Monthly detail is in `data/italy_screening.csv`.
+1.00 and therefore impossible. Monthly detail is in `{DATA}/italy_screening.csv`.
 {WORD[IT_G]} months sit inside the 1.15–1.45 band on the gross basis the screen uses,
 and {WORD[IT_N].lower()} on the net basis, so the count depends on which is read and
 neither is enough to support an annual estimate. From
@@ -485,19 +496,19 @@ simulated dispatch is substituted for either market.
       ["`battery_price_impact_near_misses.csv`",
        "every rejected year's distance from the physical band, the justification for "
        "the single physical exception", "Chapter 3"],
-      ["`data/<market>_price_effects.csv`",
+      [f"`{DATA}/<market>_price_effects.csv`",
        "each market's slice of the master, for the seven that produce estimates",
        "Chapter 5"],
-      ["`data/germany_screening.csv`",
+      [f"`{DATA}/germany_screening.csv`",
        "the four sources checked for a German dispatch series and what each returned",
        "Chapter 3"],
-      ["`data/italy_screening.csv`",
+      [f"`{DATA}/italy_screening.csv`",
        "Italian B25 by month for 2025: hours covered, gross and net ratio, and whether "
        "each month falls inside the band", "Chapter 3"],
       ["`battery_price_impact.xlsx`",
        "all of the above as one workbook, a sheet per market plus an About sheet",
        "all of the above"],
-      ["`build_readme.py`",
+      [SCRIPT_ROW,
        "the script that generates every table in this README; the CSVs are read-only "
        "inputs", DASH]])}
 
@@ -530,7 +541,7 @@ counterfactual difference carrying a bootstrap interval, not a regression.
 This is a model-based counterfactual, not a causal design. There is no control group.
 The curve is fitted from observed data rather than assumed, and the dispatch is observed
 rather than simulated, but the estimate still assumes every other generator would have
-bid identically without the fleet. No result in this repository is described as causal or
+bid identically without the fleet. No result in this {VENUE} is described as causal or
 as conservative.
 
 The supply curve is fitted on prices that already contain the fleet's own effect, which
@@ -561,8 +572,8 @@ def rewrap(text, width=88):
 
 
 if __name__ == "__main__":
-    (HERE / "README.md").write_text(rewrap(README), encoding="utf-8")
-    print(f"wrote {HERE / 'README.md'}")
+    (HERE / OUTNAME).write_text(rewrap(README), encoding="utf-8")
+    print(f"wrote {HERE / OUTNAME}")
     print(f"  cells {NCELL}, market-years {NMY}, markets {M.market.nunique()}")
     print(f"  intervals excluding zero {NEXCL}, daggered {NDAG}")
     print(f"  rejected {NREJ}: {NPHYS} physical over {NPHYS_MY} market-years, "

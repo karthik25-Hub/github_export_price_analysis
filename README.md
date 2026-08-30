@@ -101,9 +101,7 @@ demand, which is why the ordering is weak, and the year is retained with the sho
 recorded rather than dropped.
 
 Both are recorded in the `exception` column of all five affected rows rather than folded
-silently into the retained set. The exception text stored in the frozen master describes
-the 0.60 screen using the older wording; the screen is the price-ordering screen
-described above.
+silently into the retained set.
 
 `battery_price_impact_near_misses.csv` is the justification for admitting the physical
 exception and no others. It gives every rejected year's distance from the band:

@@ -1,9 +1,11 @@
-market,year,outcome,effect,lo95,hi95,pct_of_mean_price,per_GW_fleet,currency,fleet_MW,mean_price,gross_ratio,rho_governing,placebo_p,placebo_p_adjusted,n_draws,exception
-CAISO,2024,daily_spread,-7.7971,-12.1784,-4.5776,-26.577,-0.6678,USD,11676.3,29.34,1.1478,0.8303,0.001,0.001,999,gross ratio 1.1478 is 0.0022 short of the 1.15 threshold; admitted by documented exception
-CAISO,2024,mean,1.1787,0.3449,2.0073,4.018,0.1009,USD,11676.3,29.34,1.1478,0.8293,0.001,0.001,999,gross ratio 1.1478 is 0.0022 short of the 1.15 threshold; admitted by documented exception
-CAISO,2024,peak_shaving,-1.0553,-2.2339,-0.1362,-3.597,-0.0904,USD,11676.3,29.34,1.1478,0.8303,0.001,1.0,999,gross ratio 1.1478 is 0.0022 short of the 1.15 threshold; admitted by documented exception
-CAISO,2024,valley_filling,4.5102,2.0469,7.3804,15.373,0.3863,USD,11676.3,29.34,1.1478,0.8424,0.001,0.001,999,gross ratio 1.1478 is 0.0022 short of the 1.15 threshold; admitted by documented exception
-CAISO,2024,volatility,-1.7747,-2.8341,-0.9518,-6.049,-0.152,USD,11676.3,29.34,1.1478,0.8293,0.001,0.001,999,gross ratio 1.1478 is 0.0022 short of the 1.15 threshold; admitted by documented exception
-CAISO,2025,mean,1.1991,0.283,2.1726,3.846,0.0764,USD,15688.9,31.18,1.1539,0.8818,0.001,0.001,999,
-CAISO,2025,valley_filling,3.9753,1.3281,7.1498,12.75,0.2534,USD,15688.9,31.18,1.1539,0.9636,0.001,0.001,999,
-CAISO,2025,volatility,-1.4182,-2.6403,-0.7106,-4.549,-0.0904,USD,15688.9,31.18,1.1539,0.8818,0.001,0.001,999,
+market,year,outcome,effect,lo95,hi95,pct_of_mean_price,per_GW_fleet,currency,fleet_MW,mean_price,gross_ratio,rho_governing,exception
+CAISO,2024,daily_spread,-34.822,-43.2284,-28.8874,-106.566,-2.9823,USD,11676.3,32.68,1.1478,0.9758,gross ratio 1.1478 is 0.0022 short of the 1.15 threshold; admitted by documented exception
+CAISO,2024,peak_shaving,-10.2247,-15.555,-6.1403,-31.291,-0.8757,USD,11676.3,32.68,1.1478,0.9758,gross ratio 1.1478 is 0.0022 short of the 1.15 threshold; admitted by documented exception
+CAISO,2024,valley_filling,9.9264,6.8536,12.9456,30.378,0.8501,USD,11676.3,32.68,1.1478,0.9879,gross ratio 1.1478 is 0.0022 short of the 1.15 threshold; admitted by documented exception
+CAISO,2024,volatility,-6.5582,-8.3665,-5.0841,-20.07,-0.5617,USD,11676.3,32.68,1.1478,0.9992,gross ratio 1.1478 is 0.0022 short of the 1.15 threshold; admitted by documented exception
+CAISO,2024,mean,1.22,0.1785,2.0784,3.734,0.1045,USD,11676.3,32.68,1.1478,0.9992,gross ratio 1.1478 is 0.0022 short of the 1.15 threshold; admitted by documented exception
+CAISO,2025,daily_spread,-19.4689,-24.5174,-16.5783,-60.476,-1.2409,USD,15688.9,32.19,1.1539,0.9515,
+CAISO,2025,peak_shaving,-3.4736,-4.5293,-2.5745,-10.79,-0.2214,USD,15688.9,32.19,1.1539,0.9515,
+CAISO,2025,valley_filling,9.0523,6.6071,12.5225,28.119,0.577,USD,15688.9,32.19,1.1539,1.0,
+CAISO,2025,volatility,-5.0746,-6.4122,-4.1369,-15.763,-0.3235,USD,15688.9,32.19,1.1539,0.9991,
+CAISO,2025,mean,2.2657,1.5482,3.1281,7.038,0.1444,USD,15688.9,32.19,1.1539,0.9991,
